@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 
-Route::get('repos', 'App\Http\Controllers\ReposController@index');
+Route::resource('repos', 'App\Http\Controllers\ReposController');
