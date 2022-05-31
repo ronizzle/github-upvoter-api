@@ -18,4 +18,5 @@ Route::get('/', function () {
 });
 
 
-Route::resource('repos', 'App\Http\Controllers\ReposController');
+Route::get('repos', 'App\Http\Controllers\ReposController@index');
+Route::post('repos/upvote', 'App\Http\Controllers\ReposController@upvote');
